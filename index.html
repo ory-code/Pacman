@@ -2,16 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./Pacman.png" />
+    <link rel="icon" href="./src/images/icon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pacman code by Sacha 💛 👻</title>
     <link rel="stylesheet" href="./src/style/style.css" />
   </head>
+  <style>
+    @font-face {
+      font-family: "crack-man";
+      src: url("font/CrackMan.TTF");
+    }
+    #gameCanvas {
+      box-shadow: 10px 10px 20px black;
+    }
+    h1 {
+      text-align: center;
+      font-family: "crack-man";
+      color: yellow;
+      letter-spacing: 10px;
+      font-size: 40px;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      height: 100vh;
+      /* background: linear-gradient(
+        0deg,
+        rgb(17, 51, 161) 0%,
+        rgb(136, 34, 195) 100%
+      ); */
+      background: url("images/wallpaper.png");
+      object-fit: cover;
+    }
+  </style>
   <body>
-    <h1>Pac-Man</h1>
-
-    <canvas id="gameCanvas"></canvas>
-    <script src="./src/js/Game.js" type="module"></script>
+    <div>
+      <h1>Pac-Man</h1>
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="src/Game.js" type="module"></script>
   </body>
 </html>
